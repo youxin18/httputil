@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/computer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_below="@+id/top"
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未注册用户手机验证后即可完成注册"
+        android:textColor="#989595"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_below="@+id/alert"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:hint="请输入手机号码"
+        android:paddingLeft="20dp"
+
+        style="@style/LoginEdit"
+        android:textColor="#000000"
+
+
+        />
+    <TextView
+        android:id="@+id/code"
+        android:layout_below="@+id/phone"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="获取验证码"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+       android:layout_centerHorizontal="true"
+        style="@style/LoginEdit2"
+        android:alpha="0.75"
+
+
+        />
+
+    <TextView
+        android:layout_below="@+id/code"
+
+        android:id="@+id/userpwd"
+        android:layout_alignLeft="@+id/alert"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号密码登录"/>
+    <CheckBox
+        android:layout_below="@+id/userpwd"
+
+        android:id="@+id/checkbox"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alert" />
+    <TextView
+        android:id="@+id/policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我同意《YX》协议"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_below="@+id/userpwd"
+        android:layout_marginTop="10dp"
+        android:layout_alignBaseline="@+id/checkbox"
+
+       />
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他登录方式"
+        android:layout_alignLeft="@+id/checkbox"
+        android:layout_above="@+id/webchat"
+        android:layout_marginBottom="10dp"
+
+
+      />
+
+    <ImageView
+        android:layout_above="@+id/bottom"
+        android:id="@+id/webchat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/webchat"
+
+        android:layout_alignLeft="@id/userpwd"
+        android:layout_marginBottom="50dp"
+       />
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最终解释权归YX所有"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
